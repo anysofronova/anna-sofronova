@@ -2,15 +2,15 @@ import cn from "classnames";
 import Cookies from "js-cookie";
 import React, { FC, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 import { CTA } from "./CTA";
 import { Socials } from "./Socials";
 import styles from "./Header.module.scss";
-import { LANG, THEMES } from "../../data/constants";
 import MyPhoto from "../../assets/img-home.png";
 import { useTheme } from "../../hooks/useTheme";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { LANG, THEMES } from "../../data/constants";
 
 type THeader = {
   handleChange: (e: string) => void;

@@ -1,11 +1,11 @@
 import { FC } from "react";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Socials.module.scss";
 import { LINKS } from "../../../data/constants";

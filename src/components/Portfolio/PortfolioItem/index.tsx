@@ -1,8 +1,15 @@
-import { FC } from 'react'
-import styles from './PortfolioItem.module.scss'
-import { IPortfolio } from '../../../data/portfolio-data'
+import { FC } from "react";
+import styles from "./PortfolioItem.module.scss";
 
-export const PortfolioItem: FC<IPortfolio> = ({ img, name, tags, github, link }) => {
+import { IPortfolio } from "../../../data/portfolio-data";
+
+export const PortfolioItem: FC<IPortfolio> = ({
+  img,
+  name,
+  tags,
+  github,
+  link,
+}) => {
   return (
     <div className={styles.item} data-aos="fade-up">
       <div className={styles.image}>
@@ -25,5 +32,5 @@ export const PortfolioItem: FC<IPortfolio> = ({ img, name, tags, github, link })
         ))}
       </div>
     </div>
-  )
-}
+  );
+};

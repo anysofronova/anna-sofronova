@@ -1,6 +1,6 @@
 .about {
   .container {
-    font-weight: 300;
+    font-weight: 400;
     .main {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -42,7 +42,7 @@
 @media screen and (max-width: 768px) {
   .about {
     .container {
-      font-weight: 300;
+      font-weight: 400;
       gap: 0.5rem;
       .main {
         gap: 0.5rem;
