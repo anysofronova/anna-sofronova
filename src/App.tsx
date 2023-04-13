@@ -2,15 +2,17 @@ import { FC } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Header } from "./components/Header";
-import { About } from "./components/About";
-import { Education } from "./components/Education";
-import { Experience } from "./components/Experience";
-import { Skills } from "./components/Skills";
-import { Portfolio } from "./components/Portfolio";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { Navigation } from "./components/Navigation";
+import {
+  About,
+  Contact,
+  Education,
+  Experience,
+  Footer,
+  Header,
+  Navigation,
+  Portfolio,
+  Skills,
+} from "./components";
 
 export const App: FC = () => {
   const { i18n } = useTranslation();
