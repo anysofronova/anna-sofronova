@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { Header } from "./components/Header";
 import { About } from "./components/About";
 import { Education } from "./components/Education";
+import { Experience } from "./components/Experience";
 
 export const App: FC = () => {
   const { i18n } = useTranslation();
@@ -17,6 +18,7 @@ export const App: FC = () => {
       <Header handleChange={changeLanguage} />
       <About />
       <Education />
+      <Experience />
     </>
   );
 };
