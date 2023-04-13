@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { About } from "./components/About";
 import { Education } from "./components/Education";
 import { Experience } from "./components/Experience";
+import { Skills } from "./components/Skills";
 
 export const App: FC = () => {
   const { i18n } = useTranslation();
@@ -19,6 +20,7 @@ export const App: FC = () => {
       <About />
       <Education />
       <Experience />
+      <Skills />
     </>
   );
 };
