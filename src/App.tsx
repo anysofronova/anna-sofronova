@@ -1,17 +1,36 @@
-import { FC } from 'react'
-import { useTranslation } from 'react-i18next'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import { FC } from "react";
+import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {
+  About,
+  Contact,
+  Education,
+  Experience,
+  Footer,
+  Header,
+  Navigation,
+  Portfolio,
+  Skills,
+} from "./components";
 
 export const App: FC = () => {
-  const { i18n } = useTranslation()
+  const { i18n } = useTranslation();
   const changeLanguage = (language: string): void => {
-    i18n.changeLanguage(language)
-  }
-  AOS.init()
+    i18n.changeLanguage(language);
+  };
+  AOS.init();
   return (
     <>
-        Vite
+      <Header handleChange={changeLanguage} />
+      <About />
+      <Education />
+      <Experience />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
+      <Navigation />
     </>
-  )
-}
+  );
+};

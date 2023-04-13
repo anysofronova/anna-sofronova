@@ -1,0 +1,120 @@
+.header {
+  position: relative;
+  .container {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    .me {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      width: 100%;
+      justify-items: center;
+      .social {
+        align-self: end;
+      }
+      .photo {
+        max-height: 60vh;
+        img {
+          margin: 0 auto;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .scrollDown {
+        align-self: end;
+        white-space: nowrap;
+        transform: rotate(90deg) translateX(-2.3rem);
+        font-weight: 300;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+  .other {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .switch {
+      transition: var(--transition);
+      &:hover {
+        color: var(--color-primary-variant);
+        transform: rotate(20deg) scale(1.02);
+      }
+    }
+    .lang {
+      min-width: 25px;
+      min-height: 20px;
+      select {
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// ========== Media Queries ==========
+@media screen and (max-width: 900px) {
+  .header {
+    .other {
+      .switch {
+        &:hover {
+          color: var(--color-text);
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+// ========== Media Queries ==========
+@media screen and (max-width: 600px) {
+  .header {
+    .container {
+      .me {
+        grid-template-columns: 1fr;
+        align-self: start;
+        .photo {
+          img {
+            margin: 0 auto;
+            max-width: 100%;
+          }
+        }
+        .scrollDown {
+          display: none;
+        }
+      }
+    }
+    .other {
+      right: 1.5rem;
+      top: 1.5rem;
+      gap: 0.8rem;
+      align-items: center;
+      justify-content: center;
+      .switch {
+        &:hover {
+          color: var(--color-text);
+          transform: none;
+        }
+      }
+    }
+  }
+}
