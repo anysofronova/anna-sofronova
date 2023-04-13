@@ -9,6 +9,7 @@ import { Experience } from "./components/Experience";
 import { Skills } from "./components/Skills";
 import { Portfolio } from "./components/Portfolio";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 export const App: FC = () => {
   const { i18n } = useTranslation();
@@ -25,6 +26,7 @@ export const App: FC = () => {
       <Skills />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 };
