@@ -1,44 +1,45 @@
-import { useLayoutEffect, useState } from 'react'
+import { useLayoutEffect, useState } from "react";
 
-const clamp = (value: number) => Math.max(0, value)
-const isBetween = (value: number, floor: number, ceil: number) => value >= floor && value <= ceil
+const clamp = (value: number) => Math.max(0, value);
+const isBetween = (value: number, floor: number, ceil: number) =>
+  value >= floor && value <= ceil;
 
 const useScrollspy = (ids: string[], offset: number = 0) => {
-  const [activeId, setActiveId] = useState<string>('')
-  const [scroll, setScroll] = useState<number>(0)
+  const [activeId, setActiveId] = useState<string>("");
+  const [scroll, setScroll] = useState<number>(0);
 
   useLayoutEffect(() => {
     const listener = () => {
-      setScroll(window.pageYOffset)
+      setScroll(window.pageYOffset);
 
       const position = ids
         .map((id) => {
-          const element = document.getElementById(id)
+          const element = document.getElementById(id);
 
-          if (!element) return { id, top: -1, bottom: -1 }
+          if (!element) return { id, top: -1, bottom: -1 };
 
-          const rect = element.getBoundingClientRect()
-          const top = clamp(rect.top + scroll - offset)
-          const bottom = clamp(rect.bottom + scroll - offset)
+          const rect = element.getBoundingClientRect();
+          const top = clamp(rect.top + scroll - offset);
+          const bottom = clamp(rect.bottom + scroll - offset);
 
-          return { id, top, bottom }
+          return { id, top, bottom };
         })
-        .find(({ top, bottom }) => isBetween(scroll, top, bottom))
+        .find(({ top, bottom }) => isBetween(scroll, top, bottom));
 
-      setActiveId(position?.id || '')
-    }
+      setActiveId(position?.id || "");
+    };
 
-    listener()
-    window.addEventListener('resize', listener)
-    window.addEventListener('scroll', listener)
+    listener();
+    window.addEventListener("resize", listener);
+    window.addEventListener("scroll", listener);
 
     return () => {
-      window.removeEventListener('resize', listener)
-      window.removeEventListener('scroll', listener)
-    }
-  }, [ids, offset, scroll])
+      window.removeEventListener("resize", listener);
+      window.removeEventListener("scroll", listener);
+    };
+  }, [ids, offset, scroll]);
 
-  return { activeId, scroll }
-}
+  return { activeId, scroll };
+};
 
-export default useScrollspy
+export default useScrollspy;

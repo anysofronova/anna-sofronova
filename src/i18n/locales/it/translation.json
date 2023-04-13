@@ -29,7 +29,6 @@
   "experience_date11": "09.2022",
   "experience_date12": "present",
 
-
   "experience_name2": "freelance.ru / fl.ru",
   "experience_info2": "FrontEnd Freelancer",
   "experience_list21": "HTML | SCSS | JavaScript (ES6+) | Bootstrap | Git | Webpack",
@@ -64,6 +63,4 @@
   "contact_error_name": "Il nome non può superare i 30 caratteri",
   "contact_error_email": "Inserisci un'email valida",
   "contact_error_type": "Tutti i campi sono obbligatori"
-
-
 }

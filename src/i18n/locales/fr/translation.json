@@ -40,7 +40,7 @@
   "experience_name3": "LLC \"ТСА\"",
   "experience_info3": "Data Scientist",
   "experience_list31": "Python | SQL | Pandas | NumPy | Scikit-Learn | TensorFlow | Keras | Jupyter | Git",
-  "experience_list32":  "Développement et optimisation de modèles d'apprentissage automatique, traitement et analyse de grands volumes de données, création de tableaux de bord et de rapports pour surveiller les indicateurs de performance de l'entreprise, ainsi que participation au développement et à la mise en œuvre d'algorithmes et de solutions logicielles dans différents secteurs.",
+  "experience_list32": "Développement et optimisation de modèles d'apprentissage automatique, traitement et analyse de grands volumes de données, création de tableaux de bord et de rapports pour surveiller les indicateurs de performance de l'entreprise, ainsi que participation au développement et à la mise en œuvre d'algorithmes et de solutions logicielles dans différents secteurs.",
   "experience_place3": "Moscou",
   "experience_date31": "01.19",
   "experience_date32": "06.2021",
@@ -54,7 +54,6 @@
   "skills_soft_6": "Créativité",
   "skills_soft_7": "Attention aux détails",
   "portfolio_title": "Mon portfolio",
-
 
   "contact_title": "Contactez-moi",
   "contact_name": "Nom:",

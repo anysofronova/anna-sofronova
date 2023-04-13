@@ -1,12 +1,12 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-import BackEnd from 'i18next-http-backend'
-import LanguageDetector from 'i18next-browser-languagedetector'
-import translationEN from './locales/en/translation.json'
-import translationRU from './locales/ru/translation.json'
-import translationIT from './locales/it/translation.json'
-import translationFR from './locales/fr/translation.json'
-import { LANG } from '../data/constants'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import BackEnd from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
+import translationEN from "./locales/en/translation.json";
+import translationRU from "./locales/ru/translation.json";
+import translationIT from "./locales/it/translation.json";
+import translationFR from "./locales/fr/translation.json";
+import { LANG } from "../data/constants";
 
 i18n
   .use(BackEnd)
@@ -14,11 +14,11 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: Object.values(LANG),
-    fallbackLng: 'en',
+    fallbackLng: "en",
     debug: false,
     detection: {
-      order: ['cookie', 'localStorage', 'htmlTag', 'path', 'subdomain'],
-      caches: ['cookie'],
+      order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
+      caches: ["cookie"],
     },
     resources: {
       en: {
@@ -37,6 +37,6 @@ i18n
     interpolation: {
       escapeValue: false,
     },
-  })
+  });
 
-export default i18n
+export default i18n;
