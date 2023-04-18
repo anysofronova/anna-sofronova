@@ -1,7 +1,8 @@
 import { FC } from "react";
-import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
+
 import {
   About,
   Contact,
@@ -19,7 +20,9 @@ export const App: FC = () => {
   const changeLanguage = (language: string): void => {
     i18n.changeLanguage(language);
   };
+
   AOS.init();
+
   return (
     <>
       <Header handleChange={changeLanguage} />
