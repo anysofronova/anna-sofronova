@@ -3,7 +3,7 @@ export const LINKS = {
   GITHUB: "https://github.com/anysofronova",
   TELEGRAM: "https://t.me/Anna_Fawn",
   CODEWARS: "https://www.codewars.com/users/anna_sofronova",
-  EMAIL: "mailto:anysofronova@yandex.ru",
+  EMAIL: "mailto:anna.sofronova.frontend@gmail.com",
   UNIVERSITY_RU: "https://www.rudn.ru/",
   UNIVERSITY_EN: "https://eng.rudn.ru/",
   UNIVERSITY_FR: "https://fr.rudn.ru/",

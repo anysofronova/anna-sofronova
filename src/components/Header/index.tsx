@@ -1,6 +1,6 @@
+import React, { FC, useState } from "react";
 import cn from "classnames";
 import Cookies from "js-cookie";
-import React, { FC, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
