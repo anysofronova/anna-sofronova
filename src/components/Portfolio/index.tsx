@@ -17,7 +17,7 @@ export const Portfolio: FC = () => {
           <h2>{t("portfolio_title")}</h2>
         </div>
         <div className={styles.main}>
-          {portfolioData.map((i) => (
+          {[...portfolioData].reverse().map((i) => (
             <PortfolioItem key={i.id} {...i} />
           ))}
         </div>
