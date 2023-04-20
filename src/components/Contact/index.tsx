@@ -28,7 +28,15 @@ export const Contact = () => {
 
               <h4>Email</h4>
               <a href={LINKS.EMAIL} target={"_blank"} rel="noreferrer">
-                anysofronova@yandex.ru
+                anna
+                <wbr />
+                .sofronova
+                <wbr />
+                .frontend
+                <wbr />
+                @gmail
+                <wbr />
+                .com
               </a>
             </div>
             <div>
