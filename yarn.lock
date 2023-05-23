@@ -529,7 +529,7 @@ classlist-polyfill@^1.0.3:
   resolved "https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz"
   integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
 
-classnames@^2.3.2:
+classnames@^2.2.6, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -852,6 +852,14 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-flags-select@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-flags-select/-/react-flags-select-2.2.3.tgz#205f27dcab2904d9222bc049b2be5a55981e2df9"
+  integrity sha512-HuO0H5/r6gdPwh9HyxUoYrqzjCPMZcZQmSjKd3CRSIeHnexX5crRdiS/ZxSNaMIw4SFEG0dctToFlibhfOv+6A==
+  dependencies:
+    classnames "^2.2.6"
+    sass "^1.49.7"
+
 react-hook-form@^7.43.9:
   version "7.43.9"
   resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.43.9.tgz"
@@ -909,6 +917,15 @@ rollup@^3.18.0:
   integrity sha512-3zwkBQl7Ai7MFYQE0y1MeQ15+9jsi7XxfrqwTb/9EK8D9C9+//EBR4M+CuA1KODRaNbFez/lWxA5vhEGZp4MUg==
   optionalDependencies:
     fsevents "~2.3.2"
+
+sass@^1.49.7:
+  version "1.62.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.62.1.tgz#caa8d6bf098935bc92fc73fa169fb3790cacd029"
+  integrity sha512-NHpxIzN29MXvWiuswfc1W3I0N8SXBd8UR26WntmDlRYf0bSADnwnOjsyMZ3lMezSlArD33Vs3YFhp7dWvL770A==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+    immutable "^4.0.0"
+    source-map-js ">=0.6.2 <2.0.0"
 
 sass@^1.61.0:
   version "1.61.0"

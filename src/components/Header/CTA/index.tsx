@@ -12,7 +12,7 @@ const cta = {
 };
 
 type TCta = {
-  currentLocale: string | undefined;
+  currentLocale: string | null;
 };
 
 export const CTA: FC<TCta> = ({ currentLocale }) => {
