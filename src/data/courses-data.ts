@@ -16,6 +16,10 @@ import C15 from "../assets/courses/course15.webp";
 import C16 from "../assets/courses/course16.webp";
 import C17 from "../assets/courses/course17.webp";
 import C18 from "../assets/courses/course18.webp";
+import C19 from "../assets/courses/course19.webp";
+import C20 from "../assets/courses/course20.webp";
+import C21 from "../assets/courses/course21.webp";
+import C22 from "../assets/courses/course22.webp";
 
 interface ICourses {
   id: number;
@@ -133,10 +137,28 @@ export const coursesData: ICourses[] = [
     img: C18,
     text: "Advanced React",
   },
-  // {
-  //   id: 19,
-  //   link: "https://coursera.org/share/f209186dc1793d946e2cd39871ac70e9",
-  //   img: C19,
-  //   text: "Coding Interview Preparation",
-  // },
+  {
+    id: 19,
+    link: "https://coursera.org/share/985368b019073e1827c0c2e9a7b3b645",
+    img: C19,
+    text: "Principles of UX/UI Design",
+  },
+  {
+    id: 20,
+    link: "https://coursera.org/share/3632b5a0b62711c0c9f32b14f42d3c7f",
+    img: C20,
+    text: "Front-End Developer Capstone",
+  },
+  {
+    id: 21,
+    link: "https://coursera.org/share/f209186dc1793d946e2cd39871ac70e9",
+    img: C21,
+    text: "Coding Interview Preparation",
+  },
+  {
+    id: 22,
+    link: "https://coursera.org/share/a1be9ca57919bd88874590f1aa184042",
+    img: C22,
+    text: "Meta Front-End Developer",
+  },
 ];
