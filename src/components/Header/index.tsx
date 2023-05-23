@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import cn from "classnames";
 import Cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
+import ReactFlagsSelect from "react-flags-select";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,16 +17,23 @@ type THeader = {
   handleChange: (e: string) => void;
 };
 
+const options = {
+  [LANG.EN]: "GB",
+  [LANG.RU]: "RU",
+  [LANG.FR]: "FR",
+  [LANG.IT]: "IT",
+};
+
 export const Header: FC<THeader> = ({ handleChange }) => {
   const { theme, setTheme } = useTheme();
 
   const { t } = useTranslation();
 
-  const [lang, setLang] = useState<string | undefined>(Cookies.get("i18next"));
-  if (!lang) {
-    const [defaultLang] = window.navigator.language.split("-");
-    setLang(defaultLang in LANG ? defaultLang : LANG.EN);
-  }
+  const [defaultLang] = window.navigator.language.split("-");
+
+  const [lang, setLang] = useState<string>(
+    Cookies.get("i18next") || defaultLang in LANG ? defaultLang : LANG.EN
+  );
 
   return (
     <header className={styles.header} id={"home"} data-aos="fade-up">
@@ -51,18 +59,19 @@ export const Header: FC<THeader> = ({ handleChange }) => {
       </div>
       <div className={styles.other}>
         <div className={styles.lang}>
-          <select
-            value={lang}
-            onChange={(e: any) => {
-              handleChange(e.target.value);
-              setLang(e.target.value);
+          <ReactFlagsSelect
+            selected={options[lang]}
+            onSelect={(lang) => {
+              const newLang =
+                Object.keys(options).find((key) => options[key] === lang) ||
+                "GB";
+              handleChange(newLang);
+              setLang(newLang);
             }}
-          >
-            <option value={LANG.EN}>🇬🇧</option>
-            <option value={LANG.IT}>🇮🇹</option>
-            <option value={LANG.FR}>🇫🇷</option>
-            <option value={LANG.RU}>🇷🇺</option>
-          </select>
+            countries={["GB", "IT", "FR", "RU"]}
+            showSelectedLabel={false}
+            showOptionLabel={false}
+          />
         </div>
         <div
           className={styles.switch}
