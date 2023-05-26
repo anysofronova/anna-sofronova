@@ -1,6 +1,5 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import cn from "classnames";
-import Cookies from "js-cookie";
 import { useTranslation } from "react-i18next";
 import ReactFlagsSelect from "react-flags-select";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +14,7 @@ import { LANG, THEMES } from "../../data/constants";
 
 type THeader = {
   handleChange: (e: string) => void;
+  lang: string;
 };
 
 const options = {
@@ -24,16 +24,10 @@ const options = {
   [LANG.IT]: "IT",
 };
 
-export const Header: FC<THeader> = ({ handleChange }) => {
+export const Header: FC<THeader> = ({ handleChange, lang }) => {
   const { theme, setTheme } = useTheme();
 
   const { t } = useTranslation();
-
-  const [defaultLang] = window.navigator.language.split("-");
-
-  const [lang, setLang] = useState<string>(
-    Cookies.get("i18next") || defaultLang in LANG ? defaultLang : LANG.EN
-  );
 
   return (
     <header className={styles.header} id={"home"} data-aos="fade-up">
@@ -62,11 +56,10 @@ export const Header: FC<THeader> = ({ handleChange }) => {
           <ReactFlagsSelect
             selected={options[lang]}
             onSelect={(lang) => {
-              const newLang =
+              handleChange(
                 Object.keys(options).find((key) => options[key] === lang) ||
-                "GB";
-              handleChange(newLang);
-              setLang(newLang);
+                  "GB"
+              );
             }}
             countries={["GB", "IT", "FR", "RU"]}
             showSelectedLabel={false}
