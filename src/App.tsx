@@ -36,7 +36,9 @@ export const App: FC = () => {
     setLang(language);
   };
 
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, [lang]);
 
   return (
     <>

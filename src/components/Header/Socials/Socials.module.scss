@@ -5,17 +5,15 @@
   align-items: center;
   margin-bottom: 2rem;
   font-size: 1.2rem;
+
   &::after {
     content: "";
     width: 0.5px;
     height: 2rem;
     background-color: var(--color-primary);
   }
-}
 
-// ========== Media Queries ==========
-@media screen and (max-width: 600px) {
-  .socials {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 }

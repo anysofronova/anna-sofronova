@@ -1,3 +1,4 @@
+import { FC } from "react";
 import {
   faArrowUp,
   faBriefcase,
@@ -18,7 +19,7 @@ type TNav = {
   icon: any;
 };
 
-export const Navigation = () => {
+export const Navigation: FC = () => {
   const ids: TNav[] = [
     { title: "home", icon: <FontAwesomeIcon icon={faHouse} /> },
     { title: "about", icon: <FontAwesomeIcon icon={faFaceSmile} /> },
@@ -38,19 +39,19 @@ export const Navigation = () => {
 
   return (
     <nav className={styles.nav}>
-      {ids.map((i) => (
+      {ids.map((item) => (
         <a
-          href={`#${i.title}`}
-          aria-label={i.title}
-          key={i.title}
-          className={i.title === activeId ? styles.active : ""}
+          href={`#${item.title}`}
+          aria-label={item.title}
+          key={item.title}
+          className={item.title === activeId ? styles.active : ""}
         >
-          {i.icon}
+          {item.icon}
         </a>
       ))}
       {scroll > 800 && (
         <div className={styles.up}>
-          <a href={"#home"} aria-label={"home"}>
+          <a href="#home" aria-label="home">
             <FontAwesomeIcon icon={faArrowUp} />
           </a>
         </div>

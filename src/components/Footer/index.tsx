@@ -2,7 +2,7 @@ import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import { LINKS } from "../../data/constants";
+import { CONTACT_LINKS } from "../../data/constants";
 
 const footer = {
   width: " 100%",
@@ -16,7 +16,7 @@ const footer = {
 
 export const Footer: FC = () => (
   <footer style={footer}>
-    <a href={LINKS.GITHUB} target={"_blank"} rel="noreferrer">
+    <a href={CONTACT_LINKS.GITHUB} target={"_blank"} rel="noreferrer">
       <FontAwesomeIcon icon={faGithub} /> @anysofronova
     </a>
     <p>{new Date().getFullYear()}</p>

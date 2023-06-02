@@ -1,32 +1,35 @@
-import { FC } from 'react'
-import cn from 'classnames'
-import Cookies from 'js-cookie'
-import { useTranslation } from 'react-i18next'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDays, faMapPin } from '@fortawesome/free-solid-svg-icons'
+import { FC } from "react";
+import cn from "classnames";
+import Cookies from "js-cookie";
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarDays, faMapPin } from "@fortawesome/free-solid-svg-icons";
 
-import { Courses } from './Courses'
-import styles from './Education.module.scss'
-import { LANG, LINKS } from '../../data/constants'
+import { Courses } from "./Courses";
+import styles from "./Education.module.scss";
+import { LANG, CONTACT_LINKS } from "../../data/constants";
 
 export const Education: FC = () => {
-  const { t } = useTranslation()
-  const currentLocale = Cookies.get('i18next') || LANG.EN
+  const { t } = useTranslation();
+  const currentLocale = Cookies.get("i18next") || LANG.EN;
 
   return (
-    <section id={'education'} className={styles.education}>
-      <div className={cn('container', styles.container)}>
+    <section id="education" className={cn(styles.education)}>
+      <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={'text-light'}>{t('common_title')}</h3>
-          <h2>{t('education_title')}</h2>
+          <h3 className="text-light">{t("common_title")}</h3>
+          <h2>{t("education_title")}</h2>
         </div>
+
         <div className={styles.main} data-aos="fade-up">
           <div className={styles.university}>
             <div className={styles.item}>
               <div className={styles.degree}>
-                {t('education_bachelor_name')}
-                <div className={styles.topic}>{t('education_bachelor_topic')}</div>
-                <div className={styles.gpa}>{t('education_bachelor_gpa')}</div>
+                {t("education_bachelor_name")}
+                <div className={styles.topic}>
+                  {t("education_bachelor_topic")}
+                </div>
+                <div className={styles.gpa}>{t("education_bachelor_gpa")}</div>
               </div>
 
               <div className={styles.info}>
@@ -34,15 +37,15 @@ export const Education: FC = () => {
                   <a
                     href={
                       currentLocale === LANG.RU
-                        ? LINKS.UNIVERSITY_RU
+                        ? CONTACT_LINKS.UNIVERSITY_RU
                         : currentLocale === LANG.FR
-                        ? LINKS.UNIVERSITY_FR
-                        : LINKS.UNIVERSITY_EN
+                        ? CONTACT_LINKS.UNIVERSITY_FR
+                        : CONTACT_LINKS.UNIVERSITY_EN
                     }
-                    target={'_blank'}
+                    target="_blank"
                     rel="noreferrer"
                   >
-                    {t('education_university_name')}
+                    {t("education_university_name")}
                   </a>
                 </div>
                 <div className={styles.about}>
@@ -52,7 +55,7 @@ export const Education: FC = () => {
                   </div>
                   <div>
                     <FontAwesomeIcon icon={faMapPin} />
-                    <span>{t('education_university_place')}</span>
+                    <span>{t("education_university_place")}</span>
                   </div>
                 </div>
               </div>
@@ -60,9 +63,13 @@ export const Education: FC = () => {
 
             <div className={styles.item}>
               <div className={styles.degree}>
-                {t('education_magistracy_name')}
-                <div className={styles.topic}>{t('education_magistracy_topic')}</div>
-                <div className={styles.gpa}>{t('education_magistracy_gpa')}</div>
+                {t("education_magistracy_name")}
+                <div className={styles.topic}>
+                  {t("education_magistracy_topic")}
+                </div>
+                <div className={styles.gpa}>
+                  {t("education_magistracy_gpa")}
+                </div>
               </div>
 
               <div className={styles.info}>
@@ -70,15 +77,15 @@ export const Education: FC = () => {
                   <a
                     href={
                       currentLocale === LANG.RU
-                        ? LINKS.UNIVERSITY_RU
+                        ? CONTACT_LINKS.UNIVERSITY_RU
                         : currentLocale === LANG.FR
-                        ? LINKS.UNIVERSITY_FR
-                        : LINKS.UNIVERSITY_EN
+                        ? CONTACT_LINKS.UNIVERSITY_FR
+                        : CONTACT_LINKS.UNIVERSITY_EN
                     }
-                    target={'_blank'}
+                    target="_blank"
                     rel="noreferrer"
                   >
-                    {t('education_university_name')}
+                    {t("education_university_name")}
                   </a>
                 </div>
                 <div className={styles.about}>
@@ -88,7 +95,7 @@ export const Education: FC = () => {
                   </div>
                   <div>
                     <FontAwesomeIcon icon={faMapPin} />
-                    <span>{t('education_university_place')}</span>
+                    <span>{t("education_university_place")}</span>
                   </div>
                 </div>
               </div>
@@ -101,5 +108,5 @@ export const Education: FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

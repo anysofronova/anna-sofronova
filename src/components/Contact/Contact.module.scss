@@ -4,6 +4,7 @@
       display: flex;
       gap: 2rem;
       width: 100%;
+
       .messages {
         flex: 1;
         text-align: center;
@@ -13,22 +14,33 @@
         justify-content: space-evenly;
         max-width: 40%;
         min-width: 30%;
+
         & > div {
           border-radius: 10px;
           padding: 0.5rem;
           border: 1px solid var(--color-primary);
         }
+
         .icon {
           font-size: 1.5rem;
         }
+
         h4 {
           padding-top: 0.2rem;
           font-weight: 300;
           font-size: 1.1rem;
+          margin: 0;
         }
+
         a {
           color: var(--color-text);
           hyphens: manual;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--color-primary-variant);
+          }
         }
       }
 
@@ -47,20 +59,26 @@
   .contact {
     .container {
       padding-bottom: 6rem;
+
       .main {
         flex-direction: column;
+
         .messages {
           max-width: 100%;
+
           & > div {
             padding: 0.5rem;
           }
+
           .icon {
             font-size: 1rem;
           }
+
           h4 {
             padding-top: 0.1rem;
             font-weight: 300;
             font-size: 1.1rem;
+            margin: 0;
           }
         }
       }
