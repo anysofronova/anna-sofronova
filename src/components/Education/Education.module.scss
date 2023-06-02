@@ -7,21 +7,24 @@
     margin: auto auto;
     height: 100%;
     align-items: center;
-    justify-items: center;
+
     .main {
       display: flex;
       flex-direction: column;
       width: 100%;
+
       .university {
         display: flex;
         justify-content: space-between;
         text-align: center;
         gap: 1rem;
         max-width: 100%;
+
         div {
           white-space: nowrap;
           flex: 1;
         }
+
         .item {
           background-color: var(--color-primary-opacity);
           border-radius: 10px;
@@ -30,16 +33,19 @@
           grid-template-rows: 2fr 1fr;
           border: 1px solid var(--color-primary-opacity);
           transition: var(--transition);
+
           .degree {
             padding: 0.8rem 0;
             font-weight: 400;
             font-size: 1.1rem;
             display: flex;
             flex-direction: column;
+
             .gpa {
               font-weight: 300;
               font-size: 1rem;
             }
+
             .topic {
               white-space: normal;
               font-size: 0.7rem;
@@ -47,30 +53,38 @@
               margin-top: 0.4rem;
             }
           }
+
           .info {
             display: flex;
             justify-content: center;
             flex-direction: column;
+
             .name {
               margin-bottom: 0.5rem;
               font-weight: 400;
+
               a {
                 color: white;
+
                 &:hover {
                   color: var(--color-primary-variant);
                 }
               }
             }
+
             .about {
               display: flex;
+
               div {
                 flex: 1;
               }
+
               span {
                 margin-left: 0.5rem;
               }
             }
           }
+
           &:hover {
             background: transparent;
             border: 1px solid var(--color-primary);
@@ -79,12 +93,13 @@
       }
     }
   }
+
   .courses {
     width: 100%;
   }
 }
 
-// ========== Media Queries ==========
+/* Media Queries */
 @media screen and (max-width: 900px) {
   .education {
     .container {
@@ -100,15 +115,14 @@
 @media screen and (max-width: 480px) {
   .education {
     .container {
-      .title {
-        margin-top: 2rem;
-      }
       .main {
         .university {
           flex-direction: column;
+
           div {
             white-space: normal;
           }
+
           .item {
             padding: 0.2rem;
           }

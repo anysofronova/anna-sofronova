@@ -8,38 +8,38 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Socials.module.scss";
-import { LINKS } from "../../../data/constants";
+import { CONTACT_LINKS } from "../../../data/constants";
 
 export const Socials: FC = () => {
   return (
     <div className={styles.socials}>
       <a
-        href={LINKS.LINKEDIN}
-        aria-label={LINKS.LINKEDIN}
+        href={CONTACT_LINKS.LINKEDIN}
+        aria-label={CONTACT_LINKS.LINKEDIN}
         target={"_blank"}
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
       <a
-        href={LINKS.GITHUB}
-        aria-label={LINKS.GITHUB}
+        href={CONTACT_LINKS.GITHUB}
+        aria-label={CONTACT_LINKS.GITHUB}
         target={"_blank"}
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
-        href={LINKS.TELEGRAM}
-        aria-label={LINKS.TELEGRAM}
+        href={CONTACT_LINKS.TELEGRAM}
+        aria-label={CONTACT_LINKS.TELEGRAM}
         target={"_blank"}
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faTelegram} />
       </a>
       <a
-        href={LINKS.CODEWARS}
-        aria-label={LINKS.CODEWARS}
+        href={CONTACT_LINKS.CODEWARS}
+        aria-label={CONTACT_LINKS.CODEWARS}
         target={"_blank"}
         rel="noreferrer"
       >

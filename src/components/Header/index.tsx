@@ -26,7 +26,6 @@ const options = {
 
 export const Header: FC<THeader> = ({ handleChange, lang }) => {
   const { theme, setTheme } = useTheme();
-
   const { t } = useTranslation();
 
   return (
@@ -34,7 +33,6 @@ export const Header: FC<THeader> = ({ handleChange, lang }) => {
       <div className={cn("container", styles.container)}>
         <div>
           <h3>{t("header_hello")}</h3>
-
           <h1>{t("header_name")}</h1>
           <h3 className={cn("text-light")}>{t("header_profession")}</h3>
         </div>

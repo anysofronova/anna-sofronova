@@ -73,17 +73,14 @@
           border: none;
           outline: none;
         }
-        ul{
+        ul {
 
         }
       }
     }
   }
-}
 
-// ========== Media Queries ==========
-@media screen and (max-width: 900px) {
-  .header {
+  @media screen and (max-width: 900px) {
     .other {
       .switch {
         &:hover {
@@ -93,11 +90,8 @@
       }
     }
   }
-}
 
-// ========== Media Queries ==========
-@media screen and (max-width: 600px) {
-  .header {
+  @media screen and (max-width: 600px) {
     .container {
       .me {
         grid-template-columns: 1fr;

@@ -10,10 +10,10 @@ export const Portfolio: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id={"portfolio"} className={styles.portfolio}>
+    <section id="portfolio" className={styles.portfolio}>
       <div className={cn("container", styles.container)}>
         <div>
-          <h3 className={"text-light"}>{t("common_title")}</h3>
+          <h3 className="text-light">{t("common_title")}</h3>
           <h2>{t("portfolio_title")}</h2>
         </div>
         <div className={styles.main}>

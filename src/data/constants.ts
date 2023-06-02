@@ -1,4 +1,4 @@
-export const LINKS = {
+export const CONTACT_LINKS = {
   LINKEDIN: "https://www.linkedin.com/in/anna-sofronova",
   GITHUB: "https://github.com/anysofronova",
   TELEGRAM: "https://t.me/Anna_Fawn",

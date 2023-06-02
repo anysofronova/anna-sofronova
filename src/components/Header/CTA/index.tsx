@@ -5,7 +5,7 @@ import cv_ru from "../../../assets/CV-ru.pdf";
 import cv_en from "../../../assets/CV-en.pdf";
 import { LANG } from "../../../data/constants";
 
-const cta = {
+const ctaStyles = {
   display: "flex",
   gap: "1.2rem",
   justifyContent: "center",
@@ -21,7 +21,7 @@ export const CTA: FC<TCta> = ({ currentLocale }) => {
   const cv = currentLocale === LANG.RU ? cv_ru : cv_en;
 
   return (
-    <div style={cta}>
+    <div style={ctaStyles}>
       <a href={cv} download className={"btn"}>
         {t("header_CV")}
       </a>

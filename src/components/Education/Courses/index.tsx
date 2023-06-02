@@ -1,21 +1,21 @@
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { FC, useEffect, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay, Mousewheel } from 'swiper'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { FC, useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Mousewheel } from "swiper";
 
-import styles from './Courses.module.scss'
-import { coursesData } from '../../../data/courses-data'
+import styles from "./Courses.module.scss";
+import { coursesData } from "../../../data/courses-data";
 
 export const Courses: FC = () => {
-  const [width, setWidth] = useState<number>(window.innerWidth)
-  const updateDimensions = () => setWidth(window.innerWidth)
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  const updateDimensions = () => setWidth(window.innerWidth);
 
   useEffect(() => {
-    window.addEventListener('resize', updateDimensions)
-    return () => window.removeEventListener('resize', updateDimensions)
-  }, [])
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
 
   return (
     <div className={styles.courses}>
@@ -29,14 +29,14 @@ export const Courses: FC = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          type: 'fraction',
+          type: "fraction",
         }}
         loop={true}
         className={styles.mySwiper}
       >
         {coursesData.map((i) => (
           <SwiperSlide className={styles.mySlide} key={i.id}>
-            <a target={'_blank'} rel="noreferrer" href={i.link}>
+            <a target={"_blank"} rel="noreferrer" href={i.link}>
               <img src={i.img} alt={i.text} />
               <span>{i.text}</span>
             </a>
@@ -44,5 +44,5 @@ export const Courses: FC = () => {
         ))}
       </Swiper>
     </div>
-  )
-}
+  );
+};
