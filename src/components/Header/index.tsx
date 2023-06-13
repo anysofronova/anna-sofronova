@@ -36,7 +36,7 @@ export const Header: FC<THeader> = ({ handleChange, lang }) => {
           <h1>{t("header_name")}</h1>
           <h3 className={cn("text-light")}>{t("header_profession")}</h3>
         </div>
-        <CTA currentLocale={lang} />
+        <CTA />
         <div className={styles.me}>
           <div className={styles.social}>
             <Socials />

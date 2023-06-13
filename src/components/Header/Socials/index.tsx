@@ -1,10 +1,11 @@
 import { FC } from "react";
 import {
   faGithub,
+  faInstagram,
   faLinkedin,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Socials.module.scss";
@@ -13,6 +14,15 @@ import { CONTACT_LINKS } from "../../../data/constants";
 export const Socials: FC = () => {
   return (
     <div className={styles.socials}>
+      <a
+        href={CONTACT_LINKS.EMAIL}
+        aria-label={CONTACT_LINKS.EMAIL}
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faEnvelope} />
+      </a>
+
       <a
         href={CONTACT_LINKS.LINKEDIN}
         aria-label={CONTACT_LINKS.LINKEDIN}
@@ -36,6 +46,14 @@ export const Socials: FC = () => {
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faTelegram} />
+      </a>
+      <a
+        href={CONTACT_LINKS.INSTAGRAM}
+        aria-label={CONTACT_LINKS.INSTAGRAM}
+        target={"_blank"}
+        rel="noreferrer"
+      >
+        <FontAwesomeIcon icon={faInstagram} />
       </a>
       <a
         href={CONTACT_LINKS.CODEWARS}
