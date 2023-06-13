@@ -1,9 +1,7 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
 
-import cv_ru from "../../../assets/CV-ru.pdf";
-import cv_en from "../../../assets/CV-en.pdf";
-import { LANG } from "../../../data/constants";
+import cv from "../../../assets/CV_Sofronova_Anna.pdf";
 
 const ctaStyles = {
   display: "flex",
@@ -11,14 +9,8 @@ const ctaStyles = {
   justifyContent: "center",
 };
 
-type TCta = {
-  currentLocale: string | null;
-};
-
-export const CTA: FC<TCta> = ({ currentLocale }) => {
+export const CTA: FC = () => {
   const { t } = useTranslation();
-
-  const cv = currentLocale === LANG.RU ? cv_ru : cv_en;
 
   return (
     <div style={ctaStyles}>
