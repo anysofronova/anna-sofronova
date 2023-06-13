@@ -2,6 +2,7 @@ export const CONTACT_LINKS = {
   LINKEDIN: "https://www.linkedin.com/in/anna-sofronova",
   GITHUB: "https://github.com/anysofronova",
   TELEGRAM: "https://t.me/Anna_Fawn",
+  INSTAGRAM: "https://www.instagram.com/anya.fawn",
   CODEWARS: "https://www.codewars.com/users/anna_sofronova",
   EMAIL: "mailto:anna.sofronova.frontend@gmail.com",
   UNIVERSITY_RU: "https://www.rudn.ru/",

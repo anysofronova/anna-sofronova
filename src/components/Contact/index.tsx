@@ -1,7 +1,7 @@
 import cn from "classnames";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./Contact.module.scss";
@@ -27,11 +27,11 @@ export const Contact = () => {
               </div>
               <h4>Email</h4>
               <a href={CONTACT_LINKS.EMAIL} target="_blank" rel="noreferrer">
-                anna
+                anna.
                 <wbr />
-                .sofronova
+                sofronova.
                 <wbr />
-                .frontend
+                frontend
                 <wbr />
                 @gmail
                 <wbr />
