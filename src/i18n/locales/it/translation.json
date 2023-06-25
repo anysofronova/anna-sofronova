@@ -7,7 +7,7 @@
   "header_CV": "Scarica CV",
   "header_scroll": "Scorri Giù",
   "about_title": "Сhi sono",
-  "about_info1": "Ciao, sono Anna, una giovane ed energica sviluppatrice con una grande passione per lo sviluppo frontend e un costante desiderio di imparare cose nuove. Il mio stack principale è TypeScript e React, ma sto anche imparando lo sviluppo backend in Express e Nest. Attualmente ho più di 1,5 anni di esperienza in questo campo e continuo a migliorare le mie capacità ogni giorno.",
+  "about_info1": "Ciao, sono Anna, una giovane ed energica sviluppatrice con una grande passione per lo sviluppo frontend e un costante desiderio di imparare cose nuove. Il mio stack principale è TypeScript e React, ma sto anche imparando lo sviluppo backend in Express e Nest.",
   "about_info2": "Ho una laurea magistrale in scienze fisico-matematiche e ho lavorato come Data Scientist per oltre 2 anni, che mi ha dato l'opportunità unica di sviluppare le mie capacità analitiche. Nel tempo libero mi piace fare il lavoro a maglia di giocattoli e disegnare. Sono convinta che questo mi aiuti a mantenere un equilibrio nella vita e a trovare soluzioni creative al lavoro.",
   "about_info3": "Sono responsabile e comunicativa e sempre pronta a lavorare in team, migliorare le mie competenze e imparare cose nuove. Sono convinta che il mio stack tecnologico e la mia formazione, così come le mie qualità personali, mi permetteranno di diventare un valore aggiunto per il vostro team. Sarei felice di discutere con voi la possibilità di collaborazione!",
   "education_title": "Istruzione E Formazione",
@@ -23,7 +23,7 @@
 
   "experience_name1": "International Media Service",
   "experience_info1": "FrontEnd React Developer",
-  "experience_list11": "React | Next | TypeScript | MobX | Redux | Material UI | Git",
+  "experience_list11": "React | Next | TypeScript | MobX | Material UI | Git",
   "experience_list12": "Sviluppo e manutenzione delle interfacce utente per le applicazioni web utilizzando React, TypeScript, MobX e MUI. Risoluzione di problemi di responsive design e ottimizzazione delle prestazioni delle applicazioni web. Lavoro in team di sviluppatori, partecipazione a code review. Progettazione e sviluppo di nuove funzionalità per le applicazioni web in base alle esigenze degli utenti e ai requisiti del cliente.",
   "experience_place1": "Kazakhstan",
   "experience_date11": "09.2022",
