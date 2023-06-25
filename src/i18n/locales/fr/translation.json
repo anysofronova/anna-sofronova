@@ -7,7 +7,7 @@
   "header_CV": "Télécharger CV",
   "header_scroll": "Faites défiler",
   "about_title": "À propos de moi",
-  "about_info1": "Bonjour, je suis Anna, une jeune et énergique développeuse avec une grande passion pour le développement frontend et un désir constant d'apprendre de nouvelles choses. Mon stack principal est TypeScript et React, mais j'apprends également le développement backend sur Express et Nest. Actuellement, j'ai plus d'un an et demi d'expérience dans ce domaine et je continue à perfectionner mes compétences chaque jour.",
+  "about_info1": "Bonjour, je suis Anna, une jeune et énergique développeuse avec une grande passion pour le développement frontend et un désir constant d'apprendre de nouvelles choses. Mon stack principal est TypeScript et React, mais j'apprends également le développement backend sur Express et Nest.",
   "about_info2": "Je détiens une maîtrise en sciences physiques et mathématiques et j'ai travaillé en tant que Data Scientist pendant plus de deux ans, ce qui m'a donné une opportunité unique de développer mes compétences analytiques. Pendant mon temps libre, j'aime faire du tricot et dessiner des jouets. Je suis convaincue que cela m'aide à maintenir un équilibre dans ma vie et à trouver des solutions créatives dans mon travail.",
   "about_info3": "Je suis responsable et communicative, et je suis toujours prête à travailler en équipe, à perfectionner mes compétences et à apprendre de nouvelles choses. Je suis convaincue que mon stack technologique, mon éducation et mes qualités personnelles me permettront d'être un ajout précieux à votre équipe. Je serais heureuse de discuter avec vous de la possibilité d'une collaboration !\n\n\n\n\n",
   "education_title": "Mon éducation",
@@ -23,7 +23,7 @@
 
   "experience_name1": "International Media Service",
   "experience_info1": "FrontEnd React Developer",
-  "experience_list11": "React | Next | TypeScript | MobX | Redux | Material UI | Git",
+  "experience_list11": "React | Next | TypeScript | MobX | Material UI | Git",
   "experience_list12": "Développement et maintenance des interfaces utilisateur pour les applications web en utilisant React, TypeScript, MobX et MUI. Résolution de problèmes liés à la mise en page adaptative et à l'optimisation des performances des applications web. Travail en équipe de développeurs, participation à des revues de code. Conception et développement de nouvelles fonctionnalités pour les applications web en tenant compte des besoins des utilisateurs et des exigences des clients.",
   "experience_place1": "Kazakhstan",
   "experience_date11": "09.2022",
